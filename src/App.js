@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import FormUsers from './components/formUsers/FormUsers';
+import DisplayUsers from './components/displayUsers/DisplayUsers';
+import DisplayUsersDetails from './components/displayUsersDetails/DisplayUsersDetails';
+
+import  UsersContextProvider from "./contexts/UsersContext";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <UsersContextProvider>
+
+      <div className="App-container">
+        <FormUsers/>
+        <div className="App-subContainer">
+        <DisplayUsers/>
+        <DisplayUsersDetails />
+        </div>
+      </div>
+    </UsersContextProvider>
     </div>
   );
 }

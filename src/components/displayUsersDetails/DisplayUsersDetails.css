@@ -1,0 +1,22 @@
+.usersDetail-list{
+    background-color: var(--color-3th);
+    list-style: none;
+    padding: 2.4vh 1.6vw;
+    display: flex;
+    width: 65%;
+    height: auto;
+    flex-direction: column;
+    box-shadow: var(--shadow-main);
+    border-top: solid 1rem var(--color-gray);
+    margin-left: 3vw;
+}
+
+.usersDetail-list__item{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    color: var(--color-gray);
+}
+
+.usersDetail-list__item::first-letter{
+    text-transform: uppercase;
+}
